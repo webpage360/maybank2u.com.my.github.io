@@ -1,0 +1,527 @@
+	
+/*Updated by jet*/
+.onlr-title { font-size:12px; margin:0 0 5px 120px; color:#666666}
+
+.onlr-meter { 
+	height: 10px;  /* Can be anything */
+	position: relative;
+	padding: 0px;
+	width:320px;
+	background:#e4e4e4;
+	  border-top-right-radius: 6px;
+	  border-bottom-right-radius: 6px;
+	  border-top-left-radius: 6px;
+	  border-bottom-left-radius: 6px;	
+}
+.onlr-meter > span {
+  display: block;
+  height: 10px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  background-color: #ffc600;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.onlr-txt-big {font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;font-size:18px;font-weight:bold; line-height:1.5em; margin:24px 0 10px;}
+.onlr-txt {font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;font-size:12px;}
+.onlr-inline {display: inline-block;vertical-align: middle;}
+input:focus::-webkit-input-placeholder 
+{
+    color: transparent;
+}
+
+input:focus::-webkit-input-placeholder{
+    color: transparent!important;
+}
+input:focus::-moz-placeholder{
+    color: transparent!important;
+}
+input:focus:-moz-placeholder{
+    color: transparent!important;
+}
+
+.input-onlr{
+    padding: 0.7em 0.76em;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;  
+	border-radius: 4px;
+    vertical-align: middle;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	width:200px;
+}
+.error{
+	height: 20px;
+}
+.input-onlr2{
+    padding: 0.7em 0.7em;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;   
+    border-top-right-radius: 0px;
+	 border-bottom-right-radius: 4px !important;
+	 border-top-left-radius: 0px;
+	 border-bottom-left-radius: 4px !important;    
+	vertical-align: middle;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	width:340px;
+}
+
+
+a.tooltips-onlr {
+    position: relative;
+    display: inline;
+    color: #FFF;
+    font-weight: normal;
+    font-size: 12px;
+}
+a.tooltips-onlr span {
+    position: absolute;
+    width: 200px;
+    color: #000000;
+    background: #ffc600;
+    line-height: 20px;
+    text-align: center;
+    visibility: hidden;
+    border-radius: 0px;
+    padding: 10px;
+    text-align: left;
+	
+}
+a.tooltips-onlr span:after {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: -5%;
+    margin-left: 0;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 15px solid #ffc600;
+    border-bottom: 10px solid transparent;
+}
+a:hover.tooltips-onlr span {
+    visibility: visible;
+    top: -20px;
+    left: 50%;
+    margin-left: 25px;
+    z-index: 999;
+}
+.onlr-tooltip {
+    padding: 0.1em;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	position: relative;
+    right: 40px;
+}
+
+.groupline {
+    padding-left:30px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 250px;
+	padding-bottom:10px;
+    font-size: 11px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.groupline2 {
+    display: inline-block;
+    vertical-align: middle;
+    width: 250px;
+	padding-bottom:10px;
+    font-size: 11px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+}
+
+#promoSide {width:315px;float:right;padding-right:10px;}
+#onlrTable {width:380px;margin-top:5px;}
+
+/* Firefox: Get rid of the inner focus border */
+.onlr-button::-moz-focus-inner {
+ padding: 0;
+ border: 0;
+}
+.onlr-button-primary, .onlr-button-selected, a.onlr-button-primary, a.onlr-button-selected {
+    background-color: #fdce2a;
+    color: #000;
+}
+
+/* Firefox: Get rid of the inner focus border */
+.onlr-button::-moz-focus-inner {
+ padding: 0;
+ border: 0;
+}
+/*csslint outline-none:false*/
+
+.onlr-button {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    padding: 0.5em;
+    color: #444; /* rgba not supported (IE 8) */
+    color: rgba(0, 0, 0, 0.80); /* rgba supported */
+    border: 1px solid #999;  /*IE 6/7/8*/
+    border: none rgba(0, 0, 0, 0);  /*IE9 + everything else*/
+    background-color: #fdce2a;
+    text-decoration: none;
+    border-radius: 4px;
+	width:180px;
+}
+.onlr-button-hover, .onlr-button:hover, .onlr-button:focus {
+	background-color: #ffba00;
+}
+.onlr-button:focus {
+    outline: 0;
+}
+.onlr-button-active, .onlr-button:active {
+    box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset, 0 0 6px rgba(0,0,0, 0.20) inset;
+    border-color: #000\9;
+}
+#login #loginHead-onlr {padding-left:80px;border-bottom:1px solid #e5e5e5;}
+
+.onlr-select {
+    /* Normalizes the height; padding is not sufficient. */
+    height: 3.25em;
+    border: 1px solid #ccc;
+    background-color: white;
+    background-image: url(../maybank_gif/onlr-arrow.png), -webkit-linear-gradient(#FFF, #FFF 40%, #FFFFFF);
+    background-position: 95% center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    padding: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -webkit-appearance: button;
+	width:340px;
+	cursor:pointer;
+	 	}
+
+select {
+    border-top-right-radius: 4px;
+	  border-bottom-right-radius: 0px !important;
+	  border-top-left-radius: 4px;
+	  border-bottom-left-radius: 0px !important;	
+	
+}
+.imgRound{
+	width:60px;
+	height:60px;
+	border:0px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	align:left;
+	vertical-align: middle;
+	position:relative;
+	top:1%;
+	border-radius: 50px;
+}
+.imgDiv{
+	border:2px solid #F2F2F2; 
+	width: 60px;
+	height: 60px;
+	background: #FFFFFF;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+.zitemImg{
+	border:0px solid #000;
+	position:relative;
+}
+
+#PINform input:focus,
+#PINform select:focus,
+#PINform textarea:focus,
+#PINform button:focus {
+	outline: none;
+}
+#PINform {
+	background: #f9f9f9;
+    position: absolute;
+    padding: 5px;
+    -webkit-box-shadow: 0px 2px 8px -0px rgba(0,0,0,0.3); 
+    -moz-box-shadow: 0px 2px 8px -0px rgba(0,0,0,0.3);
+    box-shadow: 0px 2px 8px -0px rgba(0,0,0,0.3); 
+	border: 1px solid #d6d6d6;
+	border-radius: 4px;
+	top: 188px;
+	left: 369px;
+}
+#PINbox {
+	
+}
+.PINbutton {
+	background: #ffffff;
+    color: #7e7e7e;
+    border: 1px solid #d6d6d6;
+    border-radius: 6px;
+    font-size: 16px;
+    text-align: center;
+    width: 32px;
+    height: 32px;
+    margin: 2px 2px;
+}
+.clear {
+	background: #e5e5e5;
+	color: #ff9600;
+}
+.enter {
+	background: #e5e5e5;
+}
+.PINbutton:hover {
+	background: #fdce2a;
+	border: 1px solid #fdce2a;
+}
+.shadow{
+    -webkit-box-shadow: 0px 2px 8px -0px rgba(0,0,0,0.3); 
+    -moz-box-shadow: 0px 2px 8px -0px rgba(0,0,0,0.3);
+    box-shadow: 0px 2px 8px -0px rgba(0,0,0,0.3); 
+}
+div#PINcode {
+    display: inline-block;
+    margin-left: 240px;
+    /* padding: 10px 0; */
+    margin-top: -35px;
+}
+.pinpad {
+    display: inline-block;
+    margin-left: 200px;
+    margin-top: -30px;
+	cursor:pointer;
+}
+
+/*Overlay*/
+/*
+    Colorbox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    overflow: hidden;
+}
+#cboxWrapper {
+    max-width: none;
+}
+#cboxOverlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+#cboxMiddleLeft, #cboxBottomLeft {
+    clear: left;
+}
+#cboxContent {
+    position: relative;
+}
+#cboxLoadedContent {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+#cboxTitle {
+    margin: 0;
+}
+#cboxLoadingOverlay, #cboxLoadingGraphic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow {
+    cursor: pointer;
+}
+.cboxPhoto {
+    float: left;
+    margin: auto;
+    border: 0;
+    display: block;
+    max-width: none;
+    -ms-interpolation-mode: bicubic;
+}
+.cboxIframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+#colorbox, #cboxContent, #cboxLoadedContent {
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+}
+/* 
+    User Style:
+    Change the following styles to modify the appearance of Colorbox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay {
+    background: #000;
+    opacity: 0.5;
+    filter: alpha(opacity = 50);
+}
+#colorbox {
+    outline: 0;
+}
+#cboxTopLeft {
+    width: 21px;
+    height: 21px;
+    background: url(../maybank_gif/image/controls-onlr.png) no-repeat -101px 0;
+}
+#cboxTopRight {
+    width: 21px;
+    height: 21px;
+    background: url(../maybank_gif/image/controls-onlr.png) no-repeat -130px 0;
+}
+#cboxBottomLeft {
+    width: 21px;
+    height: 21px;
+    background: url(../maybank_gif/image/controls-onlr.png) no-repeat -101px -29px;
+}
+#cboxBottomRight {
+    width: 21px;
+    height: 21px;
+    background: url(../maybank_gif/image/controls-onlr.png) no-repeat -130px -29px;
+}
+#cboxMiddleLeft {
+    width: 21px;
+    background: url(../maybank_gif/image/controls-onlr.png) left top repeat-y;
+}
+#cboxMiddleRight {
+    width: 21px;
+    background: url(../maybank_gif/image/controls-onlr.png) right top repeat-y;
+}
+#cboxTopCenter {
+    height: 21px;
+    background: url(../maybank_gif/image/border-onlr.png) 0 0 repeat-x;
+}
+#cboxBottomCenter {
+    height: 21px;
+    background: url(../maybank_gif/image/border-onlr.png) 0 -29px repeat-x;
+}
+#cboxContent {
+    background: #f2f2f2;
+	border-radius: 10px;
+    overflow: hidden;
+}
+.cboxIframe {
+    background: #f2f2f2;
+}
+#cboxError {
+    padding: 50px;
+    border: 1px solid #ccc;
+}
+
+#cboxTitle {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    color: #949494;
+}
+#cboxCurrent {
+    position: absolute;
+    bottom: 4px;
+    left: 58px;
+    color: #949494;
+}
+#cboxLoadingOverlay {
+    background: url(../maybank_gif/image/loading_background.png) no-repeat center center;
+}
+#cboxLoadingGraphic {
+    background: url(../maybank_gif/image/loading.gif) no-repeat center center;
+}
+/* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+#cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    width: auto;
+    background: none;
+}
+/* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+#cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {
+    outline: 0;
+}
+#cboxSlideshow {
+    position: absolute;
+    bottom: 4px;
+    right: 30px;
+    color: #0092ef;
+}
+#cboxPrevious {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../maybank_gif/image/controls-onlr.png) no-repeat -75px 0;
+    width: 25px;
+    height: 25px;
+    text-indent: -9999px;
+}
+#cboxPrevious:hover {
+    background-position: -75px -25px;
+}
+#cboxNext {
+    position: absolute;
+    top: 0;
+    left: 27px;
+    background: url(../maybank_gif/image/controls-onlr.png) no-repeat -50px 0;
+    width: 25px;
+    height: 25px;
+    text-indent: -9999px;
+}
+#cboxNext:hover {
+    background-position: -50px -25px;
+}
+#cboxClose {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(../maybank_gif/image/controls-onlr.png) no-repeat -25px 0;
+    width: 25px;
+    height: 25px;
+    text-indent: -9999px;
+}
+#cboxClose:hover {
+    background-position: -25px -25px;
+}
+/*
+  The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill
+  when an alpha filter (opacity change) is set on the element or ancestor element.  This style is not applied to or needed in IE9.
+  See: http://jacklmoore.com/notes/ie-transparency-problems/
+*/
+.cboxIE #cboxTopLeft, .cboxIE #cboxTopCenter, .cboxIE #cboxTopRight, .cboxIE #cboxBottomLeft, .cboxIE #cboxBottomCenter, .cboxIE #cboxBottomRight, .cboxIE #cboxMiddleLeft, .cboxIE #cboxMiddleRight {
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF, endColorstr=#00FFFFFF);
+}
+.PINclose {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    left: 60%;
+	margin-top: -7%;
+	z-index: 100;
+}
+input, textarea { color: #000; }
+.placeholder { color: #aaa; }
+.body-txt {font-family:Arial,Helvetica,sans-serif;padding:20px 30px 30px; font-size:13px; }
+.notes-txt {font-family:Arial,Helvetica,sans-serif;padding:10px; font-size:12px; background-color:#f5f5f5; border:1px #999 solid; width:70%;border-radius: 4px;}
+.onlr-txt-rsa {font-family:Arial,Helvetica,sans-serif; font-size:12px;}
